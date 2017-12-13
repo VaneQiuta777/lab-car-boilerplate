@@ -1,1 +1,18 @@
 /* Los estilos de tu proyecto */
+* body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) {
+.navbar-logo {
+    width: 30vh;
+    transform: translateX(45px);
+}
+}
+@media (min-width: 992px) {
+.navbar-logo {
+    padding-top: 10px;
+    width: 45vh;
+}
+}
