@@ -17,6 +17,42 @@
 .row-jumbotron {
     transform: translateY(50vh);
 }
+/*section mobile*/
+.sectionMobile {
+    display: flex;
+    background-color: rgb(255, 176, 40); 
+}
+/*section Driver*/
+.sectionDriver {
+    background-image: url('../assets/images/conduce.jpg');        
+    background-repeat: no-repeat;        
+    position: relative;        
+    width: 100%;           
+    margin-left: auto;      
+    margin-right: auto;
+    background-size:100%;
+}
+/*section Rates*/
+.sectionRates {
+    display: flex;
+    background-color: rgb(255, 176, 40);
+    height: 70vh; 
+}
+.input-group-addon {
+    background-color: rgb(255, 176, 40);
+}
+.form-control {
+    background-color: rgb(255, 176, 40);
+    border-radius: 5px;
+    display: inline;
+
+}
+.form-control::placeholder { 
+    color:white;
+}
+.inputRates {
+    display: inline;
+}
 
 @media (max-width: 768px){
 .navbar-logo {
@@ -29,6 +65,33 @@
 .hero {
     height: 80vh; 
 }
+/*section Mobile*/
+.mobile {
+    width: 60%;
+}
+.mobileImage {
+    border: 1px solid white;
+    width: 90%;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.row-mobile{
+    margin-top: 20px;
+}
+/*section Driver*/
+.sectionDriver {
+    height: 36vh;
+    text-align: center;
+}
+.row-jumbotron .jumbotron-driver {
+    margin-top: -165px;
+}
+/*section Rates*/
+.form-control {
+    width: 300px;
+}
+
+
 }
 @media (min-width: 992px) {
 .navbar-logo {
@@ -40,5 +103,8 @@
 }
 .hero {
     height: 400vh; 
+}
+.sectionDriver {
+    height: 400vh;
 }
 }
