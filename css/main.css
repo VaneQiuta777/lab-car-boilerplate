@@ -4,6 +4,13 @@
     margin: 0;
     padding: 0;
 }
+div.row{
+    margin-right: 0px;
+ }
+ 
+ div.container-fluid{
+    padding-right: 0px;
+ }
 /*header*/
 .hero {
     background-image: url('../assets/images/taxi.jpg');        
@@ -36,7 +43,7 @@
 .sectionRates {
     display: flex;
     background-color: rgb(255, 176, 40);
-    height: 70vh; 
+    height: 50vh; 
 }
 .input-group-addon {
     background-color: rgb(255, 176, 40);
@@ -45,13 +52,60 @@
     background-color: rgb(255, 176, 40);
     border-radius: 5px;
     display: inline;
-
 }
 .form-control::placeholder { 
     color:white;
 }
 .inputRates {
     display: inline;
+}
+/*section Map*/
+.sectionMap {
+    background-color: rgb(255, 176, 40);
+    padding: 3vh;
+}
+.container-map {
+    padding: 2vh;
+    border: 1px solid white;
+}
+.mapImage {
+    width: 100%;
+    height: auto;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    background-color:#2b2b2b;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-top: 20px;
+    height: 60vh;
+}
+.footer hr{
+    margin:0;
+    margin-top: 10px;
+}
+footer address {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.icons-mobile {
+    display: inline;
+    padding: 0;
+}
+icons {
+    display: inline;
+}
+li a {
+    width: 10px;
+}
+li{
+    list-style: none;
+    width: 10px;
+}
+.imagesFooter {
+    width: 25vh;
 }
 
 @media (max-width: 768px){
@@ -90,8 +144,11 @@
 .form-control {
     width: 300px;
 }
-
-
+/*footer*/
+.footerImage{
+    width: 15vh;
+    margin: 1vh;
+  }
 }
 @media (min-width: 992px) {
 .navbar-logo {
