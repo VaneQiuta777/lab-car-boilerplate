@@ -11,6 +11,11 @@ div.row{
  div.container-fluid{
     padding-right: 0px;
  }
+ .outline {
+    border: 1px solid #fff;
+    margin : 1em 0;
+    padding: 0.5em;
+}
 /*header*/
 .hero {
     background-image: url('../assets/images/taxi.jpg');        
@@ -21,8 +26,18 @@ div.row{
     margin-right: auto;
     background-size:100%;
 }
-.row-jumbotron {
-    transform: translateY(50vh);
+.yellow-box {
+    color:#fff;
+    background-color:rgb(255,191,0);
+    padding: 0;
+    position:absolute;
+    margin-top: -90%;
+}
+.button-light {
+    background:#fff;
+    font-weight: bold;
+    color:#000;
+    padding: 0.5em 1em;
 }
 /*section mobile*/
 .sectionMobile {
@@ -31,19 +46,26 @@ div.row{
 }
 /*section Driver*/
 .sectionDriver {
-    background-image: url('../assets/images/conduce.jpg');        
-    background-repeat: no-repeat;        
-    position: relative;        
-    width: 100%;           
-    margin-left: auto;      
-    margin-right: auto;
-    background-size:100%;
+    height: 80vh;
+}
+.box-driver {
+    color:#fff;
+    height: 80vh;
+    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.5)), url('../assets/images/conduce.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.button-yellow {
+    background:#ffb100;
+    color:white;
+    font-weight:bold;
+    padding: 0.5em 1em;
 }
 /*section Rates*/
 .sectionRates {
     display: flex;
     background-color: rgb(255, 176, 40);
-    height: 50vh; 
 }
 .input-group-addon {
     background-color: rgb(255, 176, 40);
@@ -65,8 +87,7 @@ div.row{
     padding: 3vh;
 }
 .container-map {
-    padding: 2vh;
-    border: 1px solid white;
+    padding: 1vh
 }
 .mapImage {
     width: 100%;
@@ -90,29 +111,27 @@ footer address {
     padding-top: 10px;
     padding-bottom: 25px;
 }
-.icons-mobile {
+.iconosMobile {
     display: inline;
     padding: 0;
 }
 icons {
     display: inline;
 }
-li a {
-    width: 10px;
-}
 li{
     list-style: none;
-    width: 10px;
 }
 .imagesFooter {
     width: 25vh;
 }
 
 @media (max-width: 768px){
+/*nav*/
 .navbar-logo {
     width: 15vh;
     transform: translateX(50px);
 }
+/*header*/
 .row-jumbotron {
     margin-top: -150px;
 }
@@ -137,13 +156,17 @@ li{
     height: 36vh;
     text-align: center;
 }
-.row-jumbotron .jumbotron-driver {
-    margin-top: -165px;
-}
 /*section Rates*/
+.sectionRates {
+    height: 90vh;
+}
 .form-control {
     width: 300px;
 }
+.block {
+    display: block;
+}
+
 /*footer*/
 .footerImage{
     width: 15vh;
@@ -155,13 +178,20 @@ li{
     padding-top: 10px;
     width: 25vh;
 }
-.row-jumbotron {
-    margin-top: 350px;
-}
-.hero {
-    height: 400vh; 
-}
 .sectionDriver {
-    height: 400vh;
+    height: 70vh;
+}
+.yellow-box {
+    color:#fff;
+    background-color:rgb(255,191,0);
+    padding: 0;
+    position:absolute;
+    margin-top: -90%;
+}
+.sectionRates {
+    height: 70vh;
+}
+.block {
+    display: inline-block;
 }
 }
